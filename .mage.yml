@@ -36,7 +36,6 @@ magephp:
       host_path: ./site/mage/
       releases: 3
       hosts:
-        - web01.typo3server.ch
         - get01.typo3server.ch
       pre-deploy:
         - exec: { cmd: "echo \"APP_ENV=staging\" >> .env.local", desc: "Create .env.local" }
@@ -64,7 +63,6 @@ magephp:
       host_path: ./site/mage/
       releases: 3
       hosts:
-        - web01.typo3server.ch
         - get01.typo3server.ch
       pre-deploy:
         - exec: { cmd: "echo \"APP_ENV=prod\" >> .env.local", desc: "Create .env.local" }
